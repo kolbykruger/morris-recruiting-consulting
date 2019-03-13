@@ -1,13 +1,10 @@
 (function() {
-  if (sessionStorage.fonts) {
-    document.documentElement.classList.add('wf-active');
-  }else{
     WebFontConfig = {
       active: function() {
         sessionStorage.fonts = true;
       },
       google: {
-        families: ['Open+Sans:300,400,400i,500,600,700']
+        families: ['Lato:300,400,400i,700,900']
       },
       timeout: 2000
     };
@@ -18,7 +15,6 @@
       wf.async = true;
       s.parentNode.insertBefore(wf, s);
     })(document);
-  }
 })();
 
 
